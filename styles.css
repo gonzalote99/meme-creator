@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Impact";
+  font-display: block;
+  src: url("https://raw.githubusercontent.com/ajitid/meme-creator/1d535476479dd808bcd96110c982010e23fe4311/fonts/impact.woff") format("woff");
+}
+
+
+body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.bg-pure-black {
+  background-color: black;
+}

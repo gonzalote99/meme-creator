@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#dae1e7">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles1.css">
+  <title>meme creator</title>
+</head>
+<body class="bg-grey-lighter text-grey-darkest uppercase">
+  <nav role="navigation" aria-label="main navigation" class="m-3 flex-justify-between">
+    <h1 class="text-grey-dark font-normal text-base">meme creator</h1>
+  <div>
+  <a href="https://github.com/gonzalote99" target="_blank" rel="noopener" class="no-underline text-grey-dark hover:text-grey-darker">
+  <img src="https://raw.githubusercontent.com/ajitid/meme-creator/1d535476479dd808bcd96110c982010e23fe4311/images/github.svg" alt="Github" width="14"> view
+  </a> 
+  </div>
+  </nav>
+
+  <div id="upload_container" class="flex justify-center items-center">
+    <div>
+     <div class="flex justify-center">
+     <form name="image_upload_form">
+      <label for="image_upload">
+       <button type="button" onclick="image_upload_form.image_upload.click()" class="uppercase text-xl text-grey-darker bg-grey-light hover:bg-grey p-2 bg-grey-light mx-2">upload image</button> 
+      <input type="file" id="image_upload" accept="image/png, image/jpeg" class="hidden">
+
+      </label>
+      <button class="uppercase text-x1 text-grey-darker bg-grey-light hover:bg-grey p-2 bg-grey-light">proceed</button>
+     </form>
+     </div>
+     <p class="font-sans mt-3 lowercase text-center text-grey-dark"><i>best in desktop</p> 
+      <div id="image_container" class="mt-4">
+      </div>
+    </div>
+
+  </div>
+  <div id="meme_canvas_container" class="hidden justify-center items-center">
+    <div>
+    <div class="flex justify-center">
+     <div class="mb-4">
+      <label class="font-sans mr-2">
+       image width:
+       <input type="number" class="font-sans p-2 border mb-2" id="meme_image_width_input">
+
+      </label>
+      <a id="save_image_link" class="uppercase text-xl text-grey-darker inline-block no-underline bg-grey-light hover:bg-grey p-2 bg-grey-light mr-2">
+        save
+      </a>
+      <button type="button" onclick="toggleTheme()" class="uppercase text-x1 text-grey-darker bg-grey-light hover:bg-grey p-2 bg-grey-light">
+      toggle theme</button>
+      <br />
+      <input type="text" id="meme_upper_text_input" placeholder="upper" class="font-sans p-2 border">
+      <input type="text" id="meme_lower_text_input" placeholder="lower" class="font-sans p-2 border">
+
+     </div>
+
+    </div>
+    <div class="flex items-center jutify-center">
+     <div id="canvas_set" class="flex items-center justify-center flex-col bg-white">
+       <canvas id="canvas_txt_above">
+       </canvas>
+       <canvas id="canvas_img">
+
+       </canvas>
+       <canvas id="canvas_txt_below">
+
+       </canvas>
+     </div>
+    </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="script1.js"></script>
+</body>
+</html>
